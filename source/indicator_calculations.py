@@ -4,7 +4,7 @@ from binance.exceptions import BinanceAPIException
 import matplotlib
 from numpy.core.numeric import True_
 from numpy.lib.shape_base import _column_stack_dispatcher
-import config
+import source.config as config
 from datetime import datetime, timedelta
 from matplotlib import pyplot as plt
 import numpy as np

@@ -1,7 +1,7 @@
 from binance.client import Client
 from binance.enums import KLINE_INTERVAL_1DAY, KLINE_INTERVAL_1HOUR, KLINE_INTERVAL_1MINUTE
 from binance.exceptions import BinanceAPIException
-import config
+import source.config as config
 from datetime import datetime, timedelta, date
 from matplotlib import pyplot as plt
 import numpy as np
@@ -10,10 +10,10 @@ import math
 import statistics
 import time
 import requests
-import data_retrieval
-import indicators
-import indicator_testing
-import indicator_calculations
+import source.data_retrieval as data_retrieval
+import source.indicators as indicators
+import source.indicator_testing as indicator_testing
+import source.indicator_calculations as indicator_calculations
 from mpl_toolkits.mplot3d import Axes3D
 import os.path
 from os import path

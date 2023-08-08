@@ -1,7 +1,7 @@
 from binance.client import Client
 from binance.enums import KLINE_INTERVAL_1DAY, KLINE_INTERVAL_1HOUR, KLINE_INTERVAL_1MINUTE
 from binance.exceptions import BinanceAPIException
-import config
+import source.config as config
 from datetime import datetime, timedelta
 from matplotlib import pyplot as plt
 import numpy as np
